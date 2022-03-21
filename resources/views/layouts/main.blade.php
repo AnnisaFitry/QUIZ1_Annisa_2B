@@ -36,150 +36,15 @@
          <div class="loader"><img src="assets/images/loading.gif" alt="#" /></div>
       </div>
       <!-- end loader -->
-      <!-- header -->
-      <header>
-         <!-- header inner -->
-         <div class="header">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                     <div class="full">
-                        <div class="center-desk">
-                           <div class="logo">
-                              <a href="/"><img src="assets/images/logo.png" alt="#" /></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarsExample04">
-                           <ul class="navbar-nav mr-auto">
-                              <li class="nav-item active">
-                                 <a class="nav-link" href="/"> Home  </a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="/about">About</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="/products">Products </a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="/blog">Blog</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="/contact">Contact</a>
-                              </li>
-                              <li class="nav-item d_none">
-                                 <a class="nav-link" href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                              </li>
-                              <li class=" d_none get_btn">
-                                 <a  href="#">Get a quote</a>
-                              </li>
-                           </ul>
-                        </div>
-                     </nav>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </header>
-      <!-- end header inner -->
-      <!-- end header -->
+
+      @include('partials.header')
 
       @yield('container')
-      
+
       </div>
-      <!--  footer -->
-      <footer id="contact">
-         <div class="footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-4">
-                     <div class="titlepage">
-                        <h2>Contact Us</h2>
-                     </div>
-                  </div>
-                  <div class="col-md-12">
-                     <form id="request" class="main_form">
-                        <div class="row">
-                           <div class="col-md-3 ">
-                              <input class="contactus" placeholder="Full Name" type="type" name="Full Name"> 
-                           </div>
-                           <div class="col-md-3">
-                              <input class="contactus" placeholder="Email" type="type" name="Email"> 
-                           </div>
-                           <div class="col-md-3">
-                              <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
-                           </div>
-                           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                              <ul class="social_icon">
-                                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                 <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                                 <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                              </ul>
-                           </div>
-                           <div class="col-md-8">
-                              <textarea class="contactus1" placeholder="Message" type="type" Message="Name">Message </textarea>
-                           </div>
-                           <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                              <button class="send_btn">Send</button>
-                           </div>
-                        </div>
-                     </form>
-                  </div>
-                  <div class="col-md-3 border_right">
-                     <ul class="location_icon">
-                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> Locatins</li>
-                        <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a> +71 9087654321</li>
-                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>demo@gmail.com</li>
-                     </ul>
-                  </div>
-                  <div class="col-md-3 border_right">
-                     <h3>Useful Link</h3>
-                     <ul class="link">
-                        <li><a href="#">humour, or </a></li>
-                        <li><a href="#">randomised words </a> </li>
-                        <li><a href="#">which don't look </a></li>
-                        <li><a href="#">even slightly  </a> </li>
-                        <li><a href="#">believable. If   </a></li>
-                     </ul>
-                  </div>
-                  <div class="col-md-3 border_right">
-                     <h3>Menus</h3>
-                     <ul class="link">
-<li><a href="/">Home</a></li>                             
-<li><a href="/about">About</a></li>                                                     
-<li><a href="/products">Products</a></li>                             
-<li><a href="/blog">Blog</a></li>
-<li><a href="/contact">Contact</a></li>
-                     </ul>
-                  </div>
-                  <div class="col-md-3">
-                     <form class="bottom_form">
-                        <h3>Newsletter</h3>
-                        <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
-                        <button class="sub_btn">subscribe</button>
-                     </form>
-                  </div>
-               </div>
-            </div>
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <p>Copyright 2019 All Right Reserved By <a href="https://html.design/"> Free  html Templates</a></p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <!-- end footer -->
+      
+      @include('partials.footer')
+
       <!-- Javascript files-->
       <script src="assets/js/jquery.min.js"></script>
       <script src="assets/js/popper.min.js"></script>
